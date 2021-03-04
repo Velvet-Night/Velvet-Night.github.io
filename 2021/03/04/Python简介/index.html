@@ -6,19 +6,25 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Hello World | Velvet-Night</title>
+  <title>Python简介 | Velvet-Night</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="超好懂的Python简介  简介：最近网上聊的火热的Python到底是什么，它有哪些作用，又是什么原因使它如此受欢迎，现在就来帮你扫清疑惑。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://example.com/2021/03/01/hello-world/index.html">
+<meta property="og:title" content="Python简介">
+<meta property="og:url" content="http://example.com/2021/03/04/Python%E7%AE%80%E4%BB%8B/index.html">
 <meta property="og:site_name" content="Velvet-Night">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="超好懂的Python简介  简介：最近网上聊的火热的Python到底是什么，它有哪些作用，又是什么原因使它如此受欢迎，现在就来帮你扫清疑惑。">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-03-01T00:02:20.628Z">
-<meta property="article:modified_time" content="2021-03-01T00:02:20.628Z">
+<meta property="og:image" content="https://cdn.chinahadoop.cn/pimages/material/20200904/efbc04ad2d2a7790bd53fbddbbe8c73a.png">
+<meta property="og:image" content="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQ1IDc5LjE2MzQ5OSwgMjAxOC8wOC8xMy0xNjo0MDoyMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTkgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NTJDOEVFNzlCQ0Y5MTFFQUE5MzdFQ0IzRjgyMUU3NTMiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NTJDOEVFN0FCQ0Y5MTFFQUE5MzdFQ0IzRjgyMUU3NTMiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo1MkM4RUU3N0JDRjkxMUVBQTkzN0VDQjNGODIxRTc1MyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo1MkM4RUU3OEJDRjkxMUVBQTkzN0VDQjNGODIxRTc1MyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PtCQd6kAAAL7SURBVHja7JhJbI1RFMfbKq15CDGExpgoYliUhSoLMUVJdGMKGwmJhZBII2hFIiRVw8YGKwkWYkGlLDRRC6RCxdBEWnNo47WGlKKlflf+L7l5ee9775uqi/6TX943v/Ode+4557vpnZ2dad1ZGWndXD0G+lVmdOPZy0iia0ZCCWzvSsOmTRiekgcHww3Y+L+8nelwrh9chVnanwFPYBJM134OjIMxMEQvZF5koO75Ct+gCd5BvRksuAN18Nurgb3gIiywjl2wDElVg8RomB1z7hNUwiWogPZUJ0k6nIXC2LCQcTf1ZwXQ4GP0hsJ6uAxvoVQvk9TActjs8OANsE4G7ndplPHSF2iE16JJoXEAXsA2OSnuEO+BnQ5/8AeyoFj7B+Nc8wOewmPFbIMwRn10eHZ/mAy5sAKu/RvOaKkjzWzh53QKXqjQAzLkkVaogmq4Cw8TxZOXNGN70Bx5o5nppJUyagD0hlOwrysqyRGYCKvhOsTrIl4prZRYx/bGmVChlTqTl67AcpgCR6HZOj8WWuAc/LSOH4M+0Bd2wFp5N9RabAJ7t4wys/qeQiIPIsqLUZng3gplcELnamGmXwPtSZLK9XNkZI0qTK11rlmTY5R1LKK8afLcIfjsdpK4NTBW1THVxklmBPKhI8hmIZnOuLh2nuK7XB1SKEMcr6FoUfJ2ozrFZ0fYHvwO9z3cl6sWLpSOOluTJap6jy9Xmkoq8mLgGngAh7Xf6NHA8bA4DAOjpbBY2xEfIbI0DAPnW31jnrpmrwrcg6YlWmLtb4JfPgzMVUx7+iZJS9Btt6vuGq2CYT5L7dSYiuTLg61KtLbyfaaqnKBjsCymw/GrrKANbFUbFpRGhLH0cVIfOEGoMAwD2xR7FQEYWOA0Wf3U4g96+4VaHvGqbKeSF8R6i+kJl+lj/ji8d3l/lUYk9OW3R7BLnwiL5OFkiiRbNQtjxco0mLesZiKRKtXEPg+ykrjReSiCufraa9NKw20tTNW46qi7q3rWqP3qrwADAGaqqi1Vau0fAAAAAElFTkSuQmCC">
+<meta property="og:image" content="https://cdn.chinahadoop.cn/pimages/material/20200904/3e6be7170c15009beaa2c16b2b7481c1.gif">
+<meta property="og:image" content="https://cdn.chinahadoop.cn/pimages/material/20200904/d9bd019f1f1485db9b794a62a48927b9.jpg">
+<meta property="article:published_time" content="2021-03-04T03:10:19.000Z">
+<meta property="article:modified_time" content="2021-03-04T03:28:31.713Z">
 <meta property="article:author" content="Wu Bohan">
+<meta property="article:tag" content="Python学习">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.chinahadoop.cn/pimages/material/20200904/efbc04ad2d2a7790bd53fbddbbe8c73a.png">
   
     <link rel="alternative" href="/atom.xml" title="Velvet-Night" type="application/atom+xml">
   
@@ -160,39 +166,157 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-hello-world" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Python简介" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      Python简介
     </h1>
   
 
         
-        <a href="/2021/03/01/hello-world/" class="archive-article-date">
-  	<time datetime="2021-03-01T00:02:20.628Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-03-01</time>
+        <a href="/2021/03/04/Python%E7%AE%80%E4%BB%8B/" class="archive-article-date">
+  	<time datetime="2021-03-04T03:10:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-03-04</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+        <ul>
+<li>超好懂的Python简介</li>
+</ul>
+<p>简介：最近网上聊的火热的Python到底是什么，它有哪些作用，又是什么原因使它如此受欢迎，现在就来帮你扫清疑惑。</p>
+<span id="more"></span>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<h1 id="学习目标"><a href="#学习目标" class="headerlink" title="学习目标"></a>学习目标</h1><p>Python这个大网红相信你一定有所耳闻，江湖中总流传着关于它的传说。</p>
+<p>或许你只是碰巧手滑点了进来；或许是被铺天盖地的广告吸引过来想了解看看；又或许是身边的同事同学都在学习，你也想跟个风。</p>
+<p>这都不妨碍你加入进步青年的阵营中来～这节课后，你一定能对Python有更加深入的认知。</p>
+<p>首先来了解一下今天的学习目标：</p>
+<ol>
+<li>了解Python是什么</li>
+<li>Python在各行各业的广泛应用</li>
+<li>Python深受欢迎的原因</li>
+</ol>
+<h1 id="知识讲解"><a href="#知识讲解" class="headerlink" title="知识讲解"></a>知识讲解</h1><h2 id="Python是什么"><a href="#Python是什么" class="headerlink" title="Python是什么"></a>Python是什么</h2><p>Python是一门编程语言。编程就是告诉计算机：要去做什么。否则这个没有感情，冷冰冰的机器是没办法支持你打开视频网站看下饭综艺，处理工作表格等一系列操作的。这背后都离不开程序员们的用心付出（加班）。</p>
+<p>所以当需要用计算机解决问题时，就要向计算机发出指令，指令可能不止一条，而是一组。它们组合起来，就是程序。</p>
+<p>Python就是我们用来编写程序，和计算机沟通的语言。</p>
+<p>就好比和英语国家的人沟通要讲英语，和韩国人沟通要说韩语，要想和计算机打交道，就得用编程语言。</p>
+<p>Python是编程语言家族的一员，能帮助我们实现和计算机的沟通，让计算机为人类服务。</p>
+<p><img src="https://cdn.chinahadoop.cn/pimages/material/20200904/efbc04ad2d2a7790bd53fbddbbe8c73a.png" alt="img"></p>
+<h2 id="Python的应用"><a href="#Python的应用" class="headerlink" title="Python的应用"></a>Python的应用</h2><p>那究竟编程能实现哪些酷炫的效果呢？</p>
+<p>Python在数据科学和人工智能领域有非常优秀的表现，针对工作中的办公文本处理也有广泛应用，甚至制作小游戏等等，都可以用它实现。</p>
+<p>口说无凭，下面请你亲自动手运行两个小程序试试看：（看不懂代码安全没关系哦，这里体验下就可以，后面的课程会为你详细讲解～）</p>
+<ul>
+<li>代码练习：</li>
+</ul>
+<p>编程区</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> qrcodeimg = qrcode.make(<span class="string">&#x27;我喜欢你\n第一行是假的\n第二行也是假的&#x27;</span>)img.show()</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQ1IDc5LjE2MzQ5OSwgMjAxOC8wOC8xMy0xNjo0MDoyMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTkgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NTJDOEVFNzlCQ0Y5MTFFQUE5MzdFQ0IzRjgyMUU3NTMiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NTJDOEVFN0FCQ0Y5MTFFQUE5MzdFQ0IzRjgyMUU3NTMiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo1MkM4RUU3N0JDRjkxMUVBQTkzN0VDQjNGODIxRTc1MyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo1MkM4RUU3OEJDRjkxMUVBQTkzN0VDQjNGODIxRTc1MyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PtCQd6kAAAL7SURBVHja7JhJbI1RFMfbKq15CDGExpgoYliUhSoLMUVJdGMKGwmJhZBII2hFIiRVw8YGKwkWYkGlLDRRC6RCxdBEWnNo47WGlKKlflf+L7l5ee9775uqi/6TX943v/Ode+4557vpnZ2dad1ZGWndXD0G+lVmdOPZy0iia0ZCCWzvSsOmTRiekgcHww3Y+L+8nelwrh9chVnanwFPYBJM134OjIMxMEQvZF5koO75Ct+gCd5BvRksuAN18Nurgb3gIiywjl2wDElVg8RomB1z7hNUwiWogPZUJ0k6nIXC2LCQcTf1ZwXQ4GP0hsJ6uAxvoVQvk9TActjs8OANsE4G7ndplPHSF2iE16JJoXEAXsA2OSnuEO+BnQ5/8AeyoFj7B+Nc8wOewmPFbIMwRn10eHZ/mAy5sAKu/RvOaKkjzWzh53QKXqjQAzLkkVaogmq4Cw8TxZOXNGN70Bx5o5nppJUyagD0hlOwrysqyRGYCKvhOsTrIl4prZRYx/bGmVChlTqTl67AcpgCR6HZOj8WWuAc/LSOH4M+0Bd2wFp5N9RabAJ7t4wys/qeQiIPIsqLUZng3gplcELnamGmXwPtSZLK9XNkZI0qTK11rlmTY5R1LKK8afLcIfjsdpK4NTBW1THVxklmBPKhI8hmIZnOuLh2nuK7XB1SKEMcr6FoUfJ2ozrFZ0fYHvwO9z3cl6sWLpSOOluTJap6jy9Xmkoq8mLgGngAh7Xf6NHA8bA4DAOjpbBY2xEfIbI0DAPnW31jnrpmrwrcg6YlWmLtb4JfPgzMVUx7+iZJS9Btt6vuGq2CYT5L7dSYiuTLg61KtLbyfaaqnKBjsCymw/GrrKANbFUbFpRGhLH0cVIfOEGoMAwD2xR7FQEYWOA0Wf3U4g96+4VaHvGqbKeSF8R6i+kJl+lj/ji8d3l/lUYk9OW3R7BLnwiL5OFkiiRbNQtjxco0mLesZiKRKtXEPg+ykrjReSiCufraa9NKw20tTNW46qi7q3rWqP3qrwADAGaqqi1Vau0fAAAAAElFTkSuQmCC" alt="img">左滑查看完整代码</p>
+<p>终端区</p>
+<p>点我运行</p>
+<p>我们利用Python三行代码，生成了一个专属二维码，扫描它就能看到我想对你说的话～</p>
+<p>把你的心里话放在二维码里面，发给女神，一个含蓄又有趣的表白神器就产生了。</p>
+<p>下面再为你展示一个数据分析小例子，运行下面这段代码试试：</p>
+<ul>
+<li>代码练习：</li>
+</ul>
+<p>编程区</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pdimport sweetviz <span class="keyword">as</span> svdata = pd.read_csv(<span class="string">&#x27;taobao_consume.csv&#x27;</span>)taobao_report = sv.analyze(data)taobao_report.show_html()</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+
+<p>用程序读入淘宝用户消费数据，使用Python只要短短5行代码就生成了一份高大上的数据分析报告，并且用可视化图表呈现，简洁明了。</p>
+<p>还有更多的案例就不在这里一一展示啦，总之Python可以让你用更少的时间实现最多的功能，在后续的课程会手把手教你完成各种实操项目。</p>
+<p>其实Python在各行各业都有应用，下面就让我来为你科普一下：</p>
+<p>如果你是学生党：对于计算机专业的同学自然不必多说。针对非计算机专业的同学，Python可以帮你爬取论文资料，接兼职赚外快，编程技能也可以成为简历上的加分项。</p>
+<p>如果你从事财务工作：每天离不开和数据打交道，也有大量重复性工作，Python可以释放大部分人力对数据的处理，有强大的第三方库帮你解决问题。</p>
+<p>如果你从事人事工作：HR是一个需要处理大量表格文档、繁琐文件工作的岗位。Python可以帮你自动处理考勤Excel文件，自动批量发邮件，完成Word排版、替换、自动生成Excel表格，根据条件等自动划分存储不同应聘人员的简历等等。</p>
+<p>如果你从事金融行业：量化投资越来越受到大家的关注，可以利用计算机自动执行交易策略。将投资思想转化为投资模型，借助数据检验模型的有效性，进而利用有效的投资模型指导交易过程。</p>
+<p>如果你从事互联网行业：互联网行业中的运营人员，尤其是社区运营、用户运营、流量运营等岗位，每天需要处理大量用户回复、流量数据等等，用Python写了自动回复脚本，可以大大提高工作效率。</p>
+<p>互联网行业的产品岗，懂技术的产品，会深受程序猿的拥戴，沟通从此再无障碍。</p>
+<p>如果在互联网行业做电商，可以使用爬虫技术，抓取同行店铺产品用户评价，可以针对用户的痛点进行营销活动。 还可以抓取店铺sku/spu、评论、客单价、客户群、销售额、每日价格趋势分析、并制作数据报表，大大提升运营效果。</p>
+<p>如果你从事销售工作：作为销售人员，每天都要接触、拜访很多客户，那么Python可以帮助你爬取全网的相关客户求购/竞标，做数据分析，筛选目标客户分析同行产品数据/流量/客单价、客户公司各方面的数据，促成成交，年入百万提成也有望实现了~</p>
+<p>看到这里你应该能感受到，Python的应用场景非常广泛，各行各业都能有它大展拳脚的地方，是编程语言中妥妥的C位，自带光环，吸引大批粉丝迷妹。</p>
+<h1 id="Python火爆的原因"><a href="#Python火爆的原因" class="headerlink" title="Python火爆的原因"></a>Python火爆的原因</h1><p>编程语言有那么多，凭什么Python就能稳坐C位呢？</p>
+<p>当然是凭实力说话的了，来看看编程语言界的选秀大会怎么说：</p>
+<p>我们可以从TIOBE排行榜中得到想要的答案（TIOBE排行榜依据的指数由世界范围内的资深工程师和第三方供应商提供，具备相当高的权威性）。</p>
+<p>以下是这个排行榜从2015年到2020年的变化情况。从2019年开始，Python荣膺“最受欢迎编程语言”称号。</p>
+<p><img src="https://cdn.chinahadoop.cn/pimages/material/20200904/3e6be7170c15009beaa2c16b2b7481c1.gif" alt="img"></p>
+<p>为什么Python的人气逐渐飞升，总结起来主要有以下两个原因：</p>
+<h2 id="1-Python简单易学"><a href="#1-Python简单易学" class="headerlink" title="1. Python简单易学"></a>1. Python简单易学</h2><p>有别于其他编程语言，Python的语法更加贴近自然语言，非常简洁，学习起来几乎没有门槛。</p>
+<p>就从打印‘很高心认识你’这句简单的话，来看看Python和其他编程语言的差别。</p>
+<p>Java语言：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloWorld</span></span>&#123;    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span>    </span>&#123;        System.out.println(<span class="string">&quot;很高兴认识你&quot;</span>);    &#125;&#125;</span><br></pre></td></tr></table></figure>
+
+<p>C语言：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;int main()&#123;    printf(&quot;很高兴认识你&quot;);    return 0;&#125;</span></span></span><br></pre></td></tr></table></figure>
+
+<p>Python只需简单一行:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="string">&#x27;很高兴认识你&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<p>从代码量上看，不难发现Python最简洁，它没有多少仪式化的内容，对新手更加友好。</p>
+<p>在这里先教给你一个简单好用的Python语法：</p>
+<h3 id="print-语句"><a href="#print-语句" class="headerlink" title="print()语句"></a>print()语句</h3><p>print()的主要功能是<strong>打印内容</strong>。</p>
+<p>在日常生活中，打印机帮助我们把内容打印在白纸上，而在这里，计算机帮助我们把内容显示在屏幕上输出结果。</p>
+<p>我们需要做的是把要打印的内容放置在print()的括号中，然后对电脑下令：把括号里的内容打印给我瞧瞧。它就会完成打印的任务啦。</p>
+<p>我们再来打印一个‘你真聪明’试试：</p>
+<p>代码练习：</p>
+<p>编程区</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(&#39;你真聪明&#39;)</span><br></pre></td></tr></table></figure>
+
+<p>终端区</p>
+<p>点我运行</p>
+<p>Python让编程不再是程序员的专利，也不用担心被复杂的语法逻辑搞得脱发掉发,让你摆脱对编程遥不可及的幻想，变得更’接地气‘。</p>
+<h2 id="2-Python模块众多"><a href="#2-Python模块众多" class="headerlink" title="2. Python模块众多"></a>2. Python模块众多</h2><p>除了简单好学，功能强大是Python爆火的另一大原因。在它背后，有成千上万模块支持，涵盖了各方面功能。</p>
+<p><img src="https://cdn.chinahadoop.cn/pimages/material/20200904/d9bd019f1f1485db9b794a62a48927b9.jpg" alt="img"></p>
+<p>Python好像拥有多啦A梦的口袋，有各种神器的道具，告诉它你想解决的问题，Python都能从口袋里拿出对应的工具，帮你轻松搞定难题。为你节省了自己费劲找解决方案的时间，只需要利用封装好的方法就能快速处理。</p>
+<p>下面为你介绍几个领域的模块：</p>
+<ul>
+<li><h3 id="自动化办公相关："><a href="#自动化办公相关：" class="headerlink" title="自动化办公相关："></a>自动化办公相关：</h3></li>
+</ul>
+<h4 id="1、Excel自动化"><a href="#1、Excel自动化" class="headerlink" title="1、Excel自动化"></a>1、Excel自动化</h4><p>Python针对Excel有很多第三方库可以使用</p>
+<p>比如xlwings，pandas,xlswriter,xlrd,xlwt等等。<br>这些库可以很方便地对Excel文件增删改写，格式修改等。</p>
+<h4 id="2、Word自动化"><a href="#2、Word自动化" class="headerlink" title="2、Word自动化"></a>2、Word自动化</h4><p>利用python-docx模块，Python可以创建和修改Word文档，包括插入图片，表格，段落，标题，设置段落间距，字体大小样式的等等。</p>
+<h4 id="3、PowerPoint自动化"><a href="#3、PowerPoint自动化" class="headerlink" title="3、PowerPoint自动化"></a>3、PowerPoint自动化</h4><p>Python支持ppt自动化处理，主要的库有pywin32com，pptx，可以创建修改ppt文件，推荐你使用pptx库，是目前主流的ppt处理库。</p>
+<h4 id="4、邮件处理自动化"><a href="#4、邮件处理自动化" class="headerlink" title="4、邮件处理自动化"></a>4、邮件处理自动化</h4><p>Python处理邮件也是极其便利的，smtplib、imaplib、email三个库配合使用，实现邮件编写、发送、接收、读取等一系列自动化操作，省时省力。</p>
+<h4 id="5、PDF处理"><a href="#5、PDF处理" class="headerlink" title="5、PDF处理"></a>5、PDF处理</h4><p>PDFMiner可用于从PDF文档抽取信息，PyPDF2可以对PDF页面进行合并和转换。</p>
+<ul>
+<li><h3 id="数据分析相关："><a href="#数据分析相关：" class="headerlink" title="数据分析相关："></a>数据分析相关：</h3></li>
+</ul>
+<h4 id="1、NumPy"><a href="#1、NumPy" class="headerlink" title="1、NumPy"></a>1、NumPy</h4><p>NumPy是Python科学计算的基础包，这个包封装了多个可以用于数组间计算的函数供你直接调用。</p>
+<h4 id="2、pandas"><a href="#2、pandas" class="headerlink" title="2、pandas"></a>2、pandas</h4><p>pandas提供了我们能够快速便捷地处理结构化数据的大量数据结构和函数。</p>
+<h4 id="3、matplotlib"><a href="#3、matplotlib" class="headerlink" title="3、matplotlib"></a>3、matplotlib</h4><p>matplotlib是最流行的用户绘制数据图表的Python库。它让你方便地制作线条图、饼图、柱状图以及其它专业图形。</p>
+<h4 id="4、SciPy"><a href="#4、SciPy" class="headerlink" title="4、SciPy"></a>4、SciPy</h4><p>SciPy库依赖于NumPy，它提供便捷和快速的N维向量数组操作。是一组专门解决科学计算中各种标准问题域的包的集合。</p>
+<ul>
+<li><h3 id="机器学习相关："><a href="#机器学习相关：" class="headerlink" title="机器学习相关："></a>机器学习相关：</h3></li>
+</ul>
+<h4 id="1、Scikit-Learn"><a href="#1、Scikit-Learn" class="headerlink" title="1、Scikit-Learn"></a>1、Scikit-Learn</h4><p>Scikit-Learn基于NumPy和SciPy，是专门为机器学习建造的一个Python模块，提供了大量用于数据挖掘和分析的工具。</p>
+<h4 id="2、Orange3"><a href="#2、Orange3" class="headerlink" title="2、Orange3"></a>2、Orange3</h4><p>Orange3是一个基于组件的数据挖掘和机器学习软件套装，支持Python进行脚本开发。</p>
+<h4 id="3、XGBoost"><a href="#3、XGBoost" class="headerlink" title="3、XGBoost"></a>3、XGBoost</h4><p>XGBoost是专注于梯度提升算法的机器学习函数库，因其优良的学习效果及高效的训练速度而获得广泛的关注。</p>
+<p>上面这些只是Python魔法道具中的冰山一角，它还有更多的功能等待你去了解挖掘。当你需要实现某种功能时，可以搜索找到模块和方法，使用它就可以啦～</p>
+<hr>
+<h1 id="总结回顾"><a href="#总结回顾" class="headerlink" title="总结回顾"></a>总结回顾</h1><p>这节课我们学习了三个知识点，和一个简单语法，现在来一起回顾一下：</p>
+<ol>
+<li>Python是什么</li>
+</ol>
+<p>Python是一门编程语言，能帮助我们实现和计算机的沟通，让计算机为人类服务。</p>
+<ol start="2">
+<li>Python在各行业的应用</li>
+</ol>
+<p>不论你从事财务金融人事互联网等行业，Python都能帮你解决工作中的问题，提高效率。</p>
+<ol start="3">
+<li>Python受欢迎的原因</li>
+</ol>
+<p>Python深受大家欢迎的原因主要有两个：语法简单易学和模块众多，涵盖各方面功能。</p>
+<ol start="4">
+<li>语法：print()语句</li>
+</ol>
+<p>print()的主要功能是打印内容，需要把打印的内容放置在print()的括号中。</p>
 
       
 
@@ -232,6 +356,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Python学习</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -282,7 +417,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/03/01/hello-world/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/03/04/Python%E7%AE%80%E4%BB%8B/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -296,15 +431,11 @@
   
 <nav id="article-nav">
   
-    <a href="/2021/03/02/%E4%B8%BB%E9%A2%98%EF%BC%88yilia%EF%BC%89/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          主题（yilia）
-        
-      </div>
-    </a>
   
+    <a href="/2021/03/02/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">我的第一篇博客</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 
@@ -329,7 +460,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-number">1.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-number">1.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-number">1.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-number">1.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-number">1.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AD%A6%E4%B9%A0%E7%9B%AE%E6%A0%87"><span class="toc-number">1.</span> <span class="toc-text">学习目标</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%9F%A5%E8%AF%86%E8%AE%B2%E8%A7%A3"><span class="toc-number">2.</span> <span class="toc-text">知识讲解</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Python%E6%98%AF%E4%BB%80%E4%B9%88"><span class="toc-number">2.1.</span> <span class="toc-text">Python是什么</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Python%E7%9A%84%E5%BA%94%E7%94%A8"><span class="toc-number">2.2.</span> <span class="toc-text">Python的应用</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Python%E7%81%AB%E7%88%86%E7%9A%84%E5%8E%9F%E5%9B%A0"><span class="toc-number">3.</span> <span class="toc-text">Python火爆的原因</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-Python%E7%AE%80%E5%8D%95%E6%98%93%E5%AD%A6"><span class="toc-number">3.1.</span> <span class="toc-text">1. Python简单易学</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#print-%E8%AF%AD%E5%8F%A5"><span class="toc-number">3.1.1.</span> <span class="toc-text">print()语句</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-Python%E6%A8%A1%E5%9D%97%E4%BC%97%E5%A4%9A"><span class="toc-number">3.2.</span> <span class="toc-text">2. Python模块众多</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%87%AA%E5%8A%A8%E5%8C%96%E5%8A%9E%E5%85%AC%E7%9B%B8%E5%85%B3%EF%BC%9A"><span class="toc-number">3.2.1.</span> <span class="toc-text">自动化办公相关：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1%E3%80%81Excel%E8%87%AA%E5%8A%A8%E5%8C%96"><span class="toc-number">3.2.1.1.</span> <span class="toc-text">1、Excel自动化</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2%E3%80%81Word%E8%87%AA%E5%8A%A8%E5%8C%96"><span class="toc-number">3.2.1.2.</span> <span class="toc-text">2、Word自动化</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3%E3%80%81PowerPoint%E8%87%AA%E5%8A%A8%E5%8C%96"><span class="toc-number">3.2.1.3.</span> <span class="toc-text">3、PowerPoint自动化</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4%E3%80%81%E9%82%AE%E4%BB%B6%E5%A4%84%E7%90%86%E8%87%AA%E5%8A%A8%E5%8C%96"><span class="toc-number">3.2.1.4.</span> <span class="toc-text">4、邮件处理自动化</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5%E3%80%81PDF%E5%A4%84%E7%90%86"><span class="toc-number">3.2.1.5.</span> <span class="toc-text">5、PDF处理</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E7%9B%B8%E5%85%B3%EF%BC%9A"><span class="toc-number">3.2.2.</span> <span class="toc-text">数据分析相关：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1%E3%80%81NumPy"><span class="toc-number">3.2.2.1.</span> <span class="toc-text">1、NumPy</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2%E3%80%81pandas"><span class="toc-number">3.2.2.2.</span> <span class="toc-text">2、pandas</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3%E3%80%81matplotlib"><span class="toc-number">3.2.2.3.</span> <span class="toc-text">3、matplotlib</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4%E3%80%81SciPy"><span class="toc-number">3.2.2.4.</span> <span class="toc-text">4、SciPy</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%9B%B8%E5%85%B3%EF%BC%9A"><span class="toc-number">3.2.3.</span> <span class="toc-text">机器学习相关：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1%E3%80%81Scikit-Learn"><span class="toc-number">3.2.3.1.</span> <span class="toc-text">1、Scikit-Learn</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2%E3%80%81Orange3"><span class="toc-number">3.2.3.2.</span> <span class="toc-text">2、Orange3</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3%E3%80%81XGBoost"><span class="toc-number">3.2.3.3.</span> <span class="toc-text">3、XGBoost</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%80%BB%E7%BB%93%E5%9B%9E%E9%A1%BE"><span class="toc-number">4.</span> <span class="toc-text">总结回顾</span></a></li></ol>
                     </div>
                 </span>
             </div>
