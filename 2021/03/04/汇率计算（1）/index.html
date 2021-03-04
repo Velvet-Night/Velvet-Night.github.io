@@ -6,15 +6,28 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Archives | Velvet-Night</title>
+  <title>汇率计算（1） | Velvet-Night</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Velvet-Night">
-<meta property="og:url" content="http://example.com/archives/index.html">
+  <meta name="description" content="简介：第一节Python语法课堂，让我们从实现简单的汇率计算功能开始。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="汇率计算（1）">
+<meta property="og:url" content="http://example.com/2021/03/04/%E6%B1%87%E7%8E%87%E8%AE%A1%E7%AE%97%EF%BC%881%EF%BC%89/index.html">
 <meta property="og:site_name" content="Velvet-Night">
+<meta property="og:description" content="简介：第一节Python语法课堂，让我们从实现简单的汇率计算功能开始。">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.chinahadoop.cn/pimages/material/20201105/76786a4bf2347871e303ff2bfd56f7fb.jpg">
+<meta property="og:image" content="https://cdn.chinahadoop.cn/pimages/material/20201105/3c52d7140f709dd39a93d7c5b1b0d536.png">
+<meta property="og:image" content="https://cdn.chinahadoop.cn/pimages/material/20201105/b3938623f361c0b4dfc52e81a75845f3.jpg">
+<meta property="og:image" content="https://cdn.chinahadoop.cn/pimages/material/20201105/7570b9536b0980afb3aa25cf3d24374f.gif">
+<meta property="og:image" content="https://cdn.chinahadoop.cn/pimages/material/20201105/0a1756d012ece30f452c32cc71e25f59.gif">
+<meta property="og:image" content="https://cdn.chinahadoop.cn/pimages/material/20201105/9e558e12cb6f79ed66817b14e1e89858.gif">
+<meta property="og:image" content="https://cdn.chinahadoop.cn/pimages/material/20201105/a4103e8a3bf68f807642c9d061281de4.gif">
+<meta property="article:published_time" content="2021-03-04T03:41:36.000Z">
+<meta property="article:modified_time" content="2021-03-04T03:59:55.507Z">
 <meta property="article:author" content="Wu Bohan">
+<meta property="article:tag" content="Python学习">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.chinahadoop.cn/pimages/material/20201105/76786a4bf2347871e303ff2bfd56f7fb.jpg">
   
     <link rel="alternative" href="/atom.xml" title="Velvet-Night" type="application/atom+xml">
   
@@ -156,36 +169,188 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-汇率计算（1）" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      汇率计算（1）
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2021" class="archive-year">2021</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/03/04/%E6%B1%87%E7%8E%87%E8%AE%A1%E7%AE%97%EF%BC%881%EF%BC%89/" class="archive-article-date">
+
+        
+        <a href="/2021/03/04/%E6%B1%87%E7%8E%87%E8%AE%A1%E7%AE%97%EF%BC%881%EF%BC%89/" class="archive-article-date">
   	<time datetime="2021-03-04T03:41:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-03-04</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/03/04/%E6%B1%87%E7%8E%87%E8%AE%A1%E7%AE%97%EF%BC%881%EF%BC%89/">汇率计算（1）</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>简介：第一节Python语法课堂，让我们从实现简单的汇率计算功能开始。</p>
+<span id="more"></span>
 
-        <div class="article-info info-on-right">
-          
+
+
+<ul>
+<li><h1 id="案例描述"><a href="#案例描述" class="headerlink" title="案例描述"></a>案例描述</h1><p><img src="https://cdn.chinahadoop.cn/pimages/material/20201105/76786a4bf2347871e303ff2bfd56f7fb.jpg" alt="img"></p>
+<p>今天的小案例实现的功能是：通过键盘输入一个人民币金额，让计算机自动利用汇率计算出对应的美元金额，并将答案输出在显示屏上。</p>
+<p>学完本关你将掌握几个基本的Python语法，实现人民币美元的汇率自动转换任务。</p>
+<hr>
+</li>
+<li><h1 id="案例分析"><a href="#案例分析" class="headerlink" title="案例分析"></a>案例分析</h1><p>在开始写程序之前，我们首先来分析问题。</p>
+<p>要进行人民币与美元之间的转换，我们可以将问题划分为输入、处理、输出三个部分：</p>
+<ul>
+<li>输入：人民币金额</li>
+<li>处理：汇率计算</li>
+<li>输出：相应的美元金额</li>
+</ul>
+<p>对应的美元金额=人民币金额/汇率，其实也就是输出=输入/汇率。</p>
+<p><img src="https://cdn.chinahadoop.cn/pimages/material/20201105/3c52d7140f709dd39a93d7c5b1b0d536.png" alt="img"></p>
+<p>到这里相信你一定能够轻松理解，下面就要想办法让计算机也按照我们的‘指令’工作了。</p>
+<p>Python等编程语言可以把我们能理解的逻辑用计算机听得懂的语言转述给冰冷冷的机器，让它们代替人类完成任务。</p>
+<p>现在就让我们化身翻译官，进入写代码的时间！（激动地搓搓手）</p>
+<p><img src="https://cdn.chinahadoop.cn/pimages/material/20201105/b3938623f361c0b4dfc52e81a75845f3.jpg" alt="img"></p>
+<p>按照前面梳理过的思路，第一个要实现的是输入功能，使用下面这行代码：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">input</span>(<span class="string">&#x27;请输入人民币（CNY）金额：&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<p>input在英语中是<strong>输入</strong>的意思，当我们需要从给键盘给计算机输入信息时，就需要用到input()，括号中写上提示语，用来提示用户所需输入的内容。</p>
+<p>运行这行代码试试效果。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">input</span>(<span class="string">&#x27;请输入人民币（CNY）金额：&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.chinahadoop.cn/pimages/material/20201105/7570b9536b0980afb3aa25cf3d24374f.gif" alt="img"></p>
+<p>可以看到打印出了一行提示语，输入内容后回车就完成了操作，78就成功被计算机获取到了。</p>
+<p>下面你可能会想，使用input输入后，内容接收和存放在哪里呢？</p>
+<p>我们当然需要创建一个<code>变量</code>来存放它。</p>
+<p>变量顾名思义是一个可以改变的东西，与之对应的概念还有<code>常量</code>，这些概念下节课中我会继续为你详细讲解。</p>
+<p>在这里你可以理解为我们有一个数据，希望计算机读取，这时计算机就为数据留出一块空间，这块空间你可以把它想象为一个盒子，当然需要计算机处理的数据远不止一个，可能有几十上百个，那么就需要几十上百个盒子来存放这些数据。为了能更好地区分读入计算机的内容，就需要给它们各自取名，就仿佛给每个盒子外贴上标签，标签上写着对应数据的名字。</p>
+<p><img src="https://cdn.chinahadoop.cn/pimages/material/20201105/0a1756d012ece30f452c32cc71e25f59.gif" alt="img"></p>
+<p>这个名字可以任意选择，通常情况下我们使用能够代表变量含义的英文做变量名。</p>
+<p>刚才我们提到变量是可以改变的，也就是这个盒子虽然贴上了标签，但里面的内容可以随时替换。</p>
+<p>下面就把从键盘输入的人民币金额存放进盒子中，取变量名为<code>rmb_str_value</code>，使用等号=赋值：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rmb_str_value = <span class="built_in">input</span>(<span class="string">&#x27;请输入人民币（CNY）金额：&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<p>在Python中等号<code>=</code>的含义与数学上有所不同，它代表赋值，将等号右边的内容赋值给左边。在这个例子中也就是把从键盘输入的金额，赋给变量<code>rmb_str_value</code>。</p>
+<p><img src="https://cdn.chinahadoop.cn/pimages/material/20201105/9e558e12cb6f79ed66817b14e1e89858.gif" alt="img"></p>
+<p>我们用一个变量<code>rmb_str_value</code>来接收从键盘输入的金额。不过现在金额的形式还不是我们想要的数字，而是字符串类型，这里你先不用纠结什么是字符串类型，下节课我会详细为你解释，只要知道目前输入的数据还需要经过额外经过下面的一个步骤才能转换为数字类型：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">eval</span>(rmb_str_value)</span><br></pre></td></tr></table></figure>
+
+<p>利用eval()可以完成将字符串转换为数字的工作，我们同样需要把结果放到一个变量中保存。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">rmb_str_value = <span class="built_in">input</span>(<span class="string">&#x27;请输入人民币（CNY）金额&#x27;</span>)</span><br><span class="line">rmb_value = <span class="built_in">eval</span>(rmb_str_value)</span><br></pre></td></tr></table></figure>
+
+<p>完成输入转换后，人民币金额就成功得到并存储在<code>rmb_value</code>中，还记得前面提到过<code>输出=输入/汇率</code>， 在开始计算前，当然还要告诉计算机人民币对美元的汇率金额是多少。</p>
+<p>我们已知汇率值是6.70，把它放进变量<code>usd_vs_rmb</code>中存储：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">rmb_str_value = <span class="built_in">input</span>(<span class="string">&#x27;请输入人民币（CNY）金额：&#x27;</span>)</span><br><span class="line">rmb_value = <span class="built_in">eval</span>(rmb_str_value)</span><br><span class="line">usd_vs_rmb = <span class="number">6.70</span></span><br></pre></td></tr></table></figure>
+
+<p>接下来就可以利用一个简单的除法把美元金额计算出来：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rmb_value / usd_vs_rmb</span><br></pre></td></tr></table></figure>
+
+<p>和前面一样，我们需要把结果存储起来：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">rmb_str_value = <span class="built_in">input</span>(<span class="string">&#x27;请输入人民币（CNY）金额：&#x27;</span>)</span><br><span class="line">rmb_value = <span class="built_in">eval</span>(rmb_str_value)</span><br><span class="line">usd_vs_rmb = <span class="number">6.70</span></span><br><span class="line">usd_value = rmb_value / usd_vs_rmb</span><br></pre></td></tr></table></figure>
+
+<p>计算得到的结果就在<code>usd_value</code>中，最后把它打印显示出来：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">rmb_str_value = <span class="built_in">input</span>(<span class="string">&#x27;请输入人民币（CNY）金额：&#x27;</span>)</span><br><span class="line">rmb_value = <span class="built_in">eval</span>(rmb_str_value)</span><br><span class="line">usd_vs_rmb = <span class="number">6.70</span></span><br><span class="line">usd_value = rmb_value / usd_vs_rmb</span><br><span class="line">print(<span class="string">&#x27;美元（USD）金额是：&#x27;</span>,usd_value)</span><br></pre></td></tr></table></figure>
+
+<p>上节课我们讲到打印功能可以使用print()，括号中写上需要输出的内容，中间用逗号连接。</p>
+<p>上面的最后一行代码中，你一定会发现，有些内容是写在引号中的，而有些内容没有加引号，这究竟是什么原因呢？</p>
+<p>其实非常好区分，当需要打印的内容已经被计算机获取储存过，装进盒子里，贴好了标签，就可以用标签，也就是<code>变量名</code>来直接打印。例如打印美元金额，就可以写成，这种情况下就不需要加引号：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(usd_value)</span><br></pre></td></tr></table></figure>
+
+<p>当打印的内容没有存储在计算机，计算机还不认识它时，就需要把这部分内容放在引号内，例如随便打印一句话：</p>
+<p>代码练习：</p>
+<p>编程区</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="string">&#x27;好好学习，天天向上&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+
+
+<p>当然，我们也可以把这句话存储在变量中，换个方式打印出来：</p>
+<p>代码练习：</p>
+<p>编程区</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">a = <span class="string">&#x27;好好学习，天天向上&#x27;</span></span><br><span class="line">print(a)</span><br></pre></td></tr></table></figure>
+
+
+
+<p>你可以认为引号是我们和计算机之间规定的一种暗号，当需要打印的内容是‘熟人’，就不用引号帮忙了，但如果是不认识的，就需要加上引号。</p>
+<p>数字和数学运算是标准化的，也是计算机的‘熟人’，可以直接打印出来。</p>
+<p>代码练习：</p>
+<p>编程区</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(12)print(2*3)</span><br></pre></td></tr></table></figure>
+
+<p>终端区</p>
+<p>点我运行</p>
+<p>现在你应该能够理解打印美元金额的这行代码了，打印多个内容时，可以像下面这样，逗号分隔开。</p>
+<p>让我们一起来运行代码看看效果吧：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rmb_str_value &#x3D; input(&#39;请输入人民币（CNY）金额：&#39;)rmb_value &#x3D; eval(rmb_str_value)usd_vs_rmb &#x3D; 6.70usd_value &#x3D; rmb_value&#x2F;usd_vs_rmbprint(&#39;美元（USD）金额是：&#39;,usd_value)</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.chinahadoop.cn/pimages/material/20201105/a4103e8a3bf68f807642c9d061281de4.gif" alt="img"></p>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h1 id="本关总结"><a href="#本关总结" class="headerlink" title="本关总结"></a>本关总结</h1><p>本节课我们完成了一个简单的汇率兑换小程序，来回顾一下今天的重点知识：</p>
+<ul>
+<li>输入</li>
+</ul>
+<p>input()可以完成输入操作,括号中是提示语，从键盘输入内容。例如<code>input(&#39;请输入人民币（CNY）金额：&#39;)</code></p>
+<ul>
+<li>变量</li>
+</ul>
+<p>使用等号=给变量赋值，等号左边是变量名，右边是变量的值。</p>
+<ul>
+<li>打印</li>
+</ul>
+<p>print()括号中是打印的内容，当要打印的内容事先没有被储存进计算机，需要放在引号内。</p>
+</li>
+<li><h1 id="下节预告"><a href="#下节预告" class="headerlink" title="下节预告"></a>下节预告</h1><p>下节课中，我们会学习Python的基本语法：</p>
+<p>注释，变量与常量，命名规则，表达式，输入，输出等等</p>
+<p>后续精彩内容：</p>
+<p>自动提取文件夹下所有PDF文档名称</p>
+<p>自动合并Excel文件</p>
+<p>批量生成邀请函，自动发送邮件</p>
+<p>数据分析实操项目</p>
+</li>
+</ul>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/asserts/alipay.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/asserts/wechat.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -197,138 +362,119 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/03/04/%E6%B1%87%E7%8E%87%E8%AE%A1%E7%AE%97%EF%BC%881%EF%BC%89/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/03/04/Python%E7%AE%80%E4%BB%8B/" class="archive-article-date">
-  	<time datetime="2021-03-04T03:10:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-03-04</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2021/03/04/Python%E7%AE%80%E4%BB%8B/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Python简介</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/03/04/Python%E7%AE%80%E4%BB%8B/">Python简介</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Python学习</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%A1%88%E4%BE%8B%E6%8F%8F%E8%BF%B0"><span class="toc-number">1.</span> <span class="toc-text">案例描述</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%A1%88%E4%BE%8B%E5%88%86%E6%9E%90"><span class="toc-number">2.</span> <span class="toc-text">案例分析</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%9C%AC%E5%85%B3%E6%80%BB%E7%BB%93"><span class="toc-number">3.</span> <span class="toc-text">本关总结</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%8B%E8%8A%82%E9%A2%84%E5%91%8A"><span class="toc-number">4.</span> <span class="toc-text">下节预告</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/03/02/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" class="archive-article-date">
-  	<time datetime="2021-03-02T09:46:20.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-03-02</time>
-</a>
-        </div>
-    	 
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/03/02/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">我的第一篇博客</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/03/02/%E4%B8%BB%E9%A2%98%EF%BC%88yilia%EF%BC%89/" class="archive-article-date">
-  	<time datetime="2021-03-02T07:48:46.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-03-02</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/03/02/%E4%B8%BB%E9%A2%98%EF%BC%88yilia%EF%BC%89/">主题（yilia）</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/03/01/hello-world/" class="archive-article-date">
-  	<time datetime="2021-03-01T00:02:20.628Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-03-01</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/03/01/hello-world/">Hello World</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -351,8 +497,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
